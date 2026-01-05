@@ -42,10 +42,10 @@
             padding: 0 20px;
         }
         
-        /* Mobile-First Header */
+        /* Header */
         .header {
-            padding: 20px 0;
-            background: rgba(10, 14, 23, 0.95);
+            padding: 15px 0;
+            background: rgba(10, 14, 23, 0.98);
             backdrop-filter: blur(10px);
             position: fixed;
             top: 0;
@@ -57,63 +57,55 @@
         
         .header-content {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: 15px;
+            justify-content: space-between;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         
         .logo-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 22px;
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+            font-size: 20px;
         }
         
         .logo-text h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 900;
         }
         
         .logo-text p {
-            font-size: 11px;
+            font-size: 10px;
             opacity: 0.8;
         }
         
         .phone-number {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 12px 25px;
-            border-radius: 12px;
+            padding: 10px 20px;
+            border-radius: 10px;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
-        }
-        
-        .phone-number:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+            font-size: 14px;
         }
         
         /* Hero Section */
         .hero {
-            padding: 160px 0 60px;
-            background: linear-gradient(rgba(10, 14, 23, 0.9), rgba(10, 14, 23, 0.7)),
+            padding: 140px 0 60px;
+            background: linear-gradient(rgba(10, 14, 23, 0.9), rgba(10, 14, 23, 0.8)),
                         url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1000');
             background-size: cover;
             background-position: center;
@@ -122,65 +114,103 @@
         
         .hero h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 900;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .highlight-2025 {
             display: inline-block;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 8px 20px;
+            padding: 6px 15px;
             border-radius: 20px;
             font-weight: 700;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+            margin-bottom: 15px;
+            font-size: 14px;
         }
         
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.9;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding: 16px 35px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        /* Gym Timings */
+        .timings-section {
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.03);
         }
         
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
+        .timings-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            padding: 25px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
         
-        /* Photo Album Section */
-        .album-section {
-            padding: 60px 0;
+        .timings-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .timings-header i {
+            color: var(--primary);
+            font-size: 24px;
+        }
+        
+        .timing-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .timing-item:last-child {
+            border-bottom: none;
+        }
+        
+        .timing-slot {
+            font-weight: 600;
+        }
+        
+        .timing-hours {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .closed-note {
+            background: rgba(255, 107, 53, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        /* Photo Gallery */
+        .gallery-section {
+            padding: 40px 0;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         
         .section-title h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
             font-weight: 900;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         
         .section-title p {
@@ -190,101 +220,60 @@
             margin: 0 auto;
         }
         
-        .album-container {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .album-scroll {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 20px;
-            padding: 20px 0;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+            margin-top: 30px;
         }
         
-        .album-scroll::-webkit-scrollbar {
-            display: none;
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         
-        .album-item {
-            flex: 0 0 auto;
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
+        .gallery-item {
+            border-radius: 15px;
             overflow: hidden;
-            scroll-snap-align: start;
-            background: var(--card-bg);
+            height: 250px;
             position: relative;
         }
         
-        .album-item img {
+        .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .album-item:hover img {
+        .gallery-item:hover img {
             transform: scale(1.05);
-        }
-        
-        .album-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-            padding: 20px;
-        }
-        
-        .scroll-indicator {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        
-        .scroll-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .scroll-dot.active {
-            background: var(--primary);
-            transform: scale(1.3);
         }
         
         /* Horizontal Price Cards */
         .pricing-section {
-            padding: 60px 0;
-            background: rgba(255, 255, 255, 0.02);
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.03);
         }
         
-        .price-container {
+        .price-scroll-container {
             position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .price-scroll {
-            display: flex;
             overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 25px;
-            padding: 20px 10px;
             scrollbar-width: none;
             -ms-overflow-style: none;
+            padding: 10px 0 30px;
         }
         
-        .price-scroll::-webkit-scrollbar {
+        .price-scroll-container::-webkit-scrollbar {
             display: none;
+        }
+        
+        .price-grid {
+            display: flex;
+            gap: 20px;
+            padding: 0 10px;
+            width: max-content;
         }
         
         .price-card {
@@ -292,39 +281,18 @@
             width: 280px;
             background: var(--glass);
             backdrop-filter: blur(20px);
-            border-radius: 20px;
+            border-radius: 15px;
             border: 1px solid var(--glass-border);
             padding: 25px;
-            scroll-snap-align: start;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             position: relative;
             overflow: hidden;
-        }
-        
-        .price-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
         }
         
         .price-card.highlight {
             background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
             border: 2px solid rgba(255, 107, 53, 0.3);
-            transform: scale(1.05);
-        }
-        
-        .price-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        .price-card.highlight:hover {
-            transform: translateY(-10px) scale(1.05);
+            transform: scale(1.02);
         }
         
         .price-header {
@@ -336,13 +304,13 @@
         
         .price-header h3 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 5px;
         }
         
         .price-amount {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 900;
             color: var(--primary);
             margin: 10px 0;
@@ -350,14 +318,14 @@
         
         .price-features {
             list-style: none;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         
         .price-features li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 8px 0;
             display: flex;
             align-items: center;
+            font-size: 14px;
         }
         
         .price-features li:before {
@@ -370,116 +338,113 @@
         .special-badge {
             position: absolute;
             top: 15px;
-            right: -30px;
+            right: -25px;
             background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
             color: white;
-            padding: 8px 35px;
-            font-size: 0.8rem;
+            padding: 6px 30px;
+            font-size: 12px;
             font-weight: 700;
             transform: rotate(45deg);
-            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
-        }
-        
-        .badge-limited {
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
         }
         
         /* Map Section */
         .map-section {
-            padding: 60px 0;
+            padding: 40px 0;
         }
         
         .map-container {
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             height: 350px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         
-        /* Contact Section */
+        /* Contact Form */
         .contact-section {
-            padding: 60px 0;
-            background: rgba(255, 255, 255, 0.02);
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.03);
         }
         
         .contact-card {
             background: var(--glass);
             backdrop-filter: blur(20px);
-            border-radius: 20px;
+            border-radius: 15px;
             border: 1px solid var(--glass-border);
-            padding: 30px;
+            padding: 25px;
             max-width: 500px;
             margin: 0 auto;
         }
         
         .contact-form {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-weight: 500;
+            font-size: 14px;
         }
         
         .form-group input {
             width: 100%;
-            padding: 14px;
+            padding: 12px;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+            border-radius: 8px;
             color: white;
             font-family: 'Poppins', sans-serif;
+            font-size: 14px;
         }
         
         .submit-btn {
             width: 100%;
-            padding: 16px;
+            padding: 14px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
             border: none;
-            border-radius: 10px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 16px;
             font-weight: 600;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            transition: all 0.3s ease;
+            gap: 8px;
+            transition: transform 0.3s ease;
         }
         
         .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+            transform: translateY(-2px);
         }
         
         .info-item {
             display: flex;
             align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 12px;
+            margin-bottom: 15px;
         }
         
         .info-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 18px;
+            flex-shrink: 0;
         }
         
         /* Footer */
         .footer {
-            padding: 40px 0 20px;
+            padding: 30px 0 15px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
@@ -490,14 +455,14 @@
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            gap: 12px;
+            margin: 15px 0;
         }
         
         .social-link {
-            width: 45px;
-            height: 45px;
-            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
             background: rgba(255, 255, 255, 0.05);
             display: flex;
             align-items: center;
@@ -514,46 +479,55 @@
         
         .copyright {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 15px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
+            font-size: 12px;
         }
         
-        /* Responsive for Desktop */
+        /* Responsive */
         @media (min-width: 768px) {
-            .header-content {
-                flex-direction: row;
-                justify-content: space-between;
+            .header {
+                padding: 20px 0;
+            }
+            
+            .logo-text h1 {
+                font-size: 20px;
+            }
+            
+            .phone-number {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+            
+            .hero {
+                padding: 160px 0 80px;
             }
             
             .hero h1 {
-                font-size: 3rem;
-            }
-            
-            .section-title h2 {
                 font-size: 2.5rem;
             }
             
-            .album-item {
-                width: 400px;
-                height: 400px;
+            .hero p {
+                font-size: 1.1rem;
             }
             
-            .price-card {
-                width: 320px;
-                padding: 30px;
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .price-grid {
+                padding: 0 20px;
             }
         }
         
         @media (min-width: 1024px) {
             .hero {
-                padding: 200px 0 80px;
+                padding: 180px 0 100px;
             }
             
-            .album-item {
-                width: 450px;
-                height: 450px;
+            .hero h1 {
+                font-size: 3rem;
             }
         }
     </style>
@@ -569,7 +543,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>BODY SHIELD FITNESS</h1>
-                        <p>PREMIUM GYM • CHENNAI</p>
+                        <p>UNISEX GYM • CHENNAI</p>
                     </div>
                 </div>
                 <a href="tel:09940214735" class="phone-number">
@@ -582,56 +556,66 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="highlight-2025">2025 EDITION</div>
+            <div class="highlight-2025">2025 PREMIUM GYM</div>
             <h1>Transform Your Fitness Journey</h1>
-            <p>Experience Chennai's most advanced fitness center with state-of-the-art equipment, expert trainers, and personalized training programs.</p>
-            <a href="#pricing" class="cta-button">VIEW MEMBERSHIP PLANS</a>
+            <p>Chennai's most advanced fitness center with state-of-the-art equipment, expert trainers, and flexible timings for everyone.</p>
+            <a href="#pricing" class="submit-btn" style="width: auto; padding: 12px 30px; display: inline-flex;">
+                VIEW MEMBERSHIP PLANS
+            </a>
         </div>
     </section>
 
-    <!-- Photo Album Section -->
-    <section class="album-section">
+    <!-- Gym Timings -->
+    <section class="timings-section">
         <div class="container">
             <div class="section-title">
-                <h2>Our World-Class Facility</h2>
-                <p>Scroll to explore our premium gym environment</p>
+                <h2>Gym Timings</h2>
+                <p>Flexible hours for everyone's convenience</p>
             </div>
-            <div class="album-container">
-                <div class="album-scroll" id="albumScroll">
-                    <div class="album-item">
-                        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1000" alt="Gym Interior">
-                        <div class="album-overlay">
-                            <h3>Main Training Area</h3>
-                            <p>Spacious workout environment</p>
-                        </div>
-                    </div>
-                    <div class="album-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA-xzOrePokYz293b_7-sMO9ovM67p3u10g&s" alt="Weight Section">
-                        <div class="album-overlay">
-                            <h3>Weight Training Zone</h3>
-                            <p>Premium equipment collection</p>
-                        </div>
-                    </div>
-                    <div class="album-item">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/026/781/389/small/gym-interior-background-of-dumbbells-on-rack-in-fitness-and-workout-room-photo.jpg" alt="Dumbbell Rack">
-                        <div class="album-overlay">
-                            <h3>Dumbbell Station</h3>
-                            <p>Complete weight selection</p>
-                        </div>
-                    </div>
-                    <div class="album-item">
-                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cardio Area">
-                        <div class="album-overlay">
-                            <h3>Cardio Section</h3>
-                            <p>Modern cardio machines</p>
-                        </div>
-                    </div>
+            <div class="timings-card">
+                <div class="timings-header">
+                    <i class="fas fa-clock"></i>
+                    <h3>Weekly Schedule</h3>
                 </div>
-                <div class="scroll-indicator" id="scrollDots">
-                    <div class="scroll-dot active"></div>
-                    <div class="scroll-dot"></div>
-                    <div class="scroll-dot"></div>
-                    <div class="scroll-dot"></div>
+                
+                <div class="timing-item">
+                    <span class="timing-slot">Morning Batch</span>
+                    <span class="timing-hours">5:30 AM - 10:00 AM</span>
+                </div>
+                
+                <div class="timing-item">
+                    <span class="timing-slot">Ladies Batch</span>
+                    <span class="timing-hours">10:00 AM - 1:00 PM</span>
+                </div>
+                
+                <div class="timing-item">
+                    <span class="timing-slot">Evening Batch</span>
+                    <span class="timing-hours">4:30 PM - 9:00 PM</span>
+                </div>
+                
+                <div class="closed-note">
+                    <strong>Note:</strong> Sundays & Government Holidays - Gym Closed
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Facility Gallery</h2>
+                <p>Explore our world-class fitness center</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Main Gym Area">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA-xzOrePokYz293b_7-sMO9ovM67p3u10g&s" alt="Weight Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/026/781/389/small/gym-interior-background-of-dumbbells-on-rack-in-fitness-and-workout-room-photo.jpg" alt="Dumbbell Area">
                 </div>
             </div>
         </div>
@@ -644,8 +628,8 @@
                 <h2>2025 Membership Plans</h2>
                 <p>Swipe to view all our premium packages</p>
             </div>
-            <div class="price-container">
-                <div class="price-scroll" id="priceScroll">
+            <div class="price-scroll-container">
+                <div class="price-grid">
                     <!-- Regular Monthly -->
                     <div class="price-card">
                         <div class="price-header">
@@ -657,12 +641,12 @@
                             <li>Full gym access</li>
                             <li>Basic training guidance</li>
                             <li>Locker facility</li>
-                            <li>Open 7 days a week</li>
+                            <li>Open 6 days a week</li>
                         </ul>
                     </div>
                     
                     <!-- 3 Months -->
-                    <div class="price-card">
+                    <div class="price-card highlight">
                         <div class="price-header">
                             <h3>3 Months</h3>
                             <div class="price-amount">₹3200</div>
@@ -677,7 +661,7 @@
                     </div>
                     
                     <!-- 6 Months -->
-                    <div class="price-card highlight">
+                    <div class="price-card">
                         <div class="price-header">
                             <h3>6 Months</h3>
                             <div class="price-amount">₹6000</div>
@@ -692,7 +676,7 @@
                     </div>
                     
                     <!-- 12 Months -->
-                    <div class="price-card">
+                    <div class="price-card highlight">
                         <div class="price-header">
                             <h3>12 Months</h3>
                             <div class="price-amount">₹8000</div>
@@ -718,12 +702,12 @@
                             <li>Full gym access</li>
                             <li>Free professional guidance</li>
                             <li>Locker facility</li>
-                            <li>Open 7 days a week</li>
+                            <li>Open 6 days a week</li>
                         </ul>
                     </div>
                     
                     <div class="price-card highlight">
-                        <div class="special-badge badge-limited">LIMITED</div>
+                        <div class="special-badge">LIMITED</div>
                         <div class="price-header">
                             <h3>3 Months (2+1)</h3>
                             <div class="price-amount">₹3500</div>
@@ -767,7 +751,7 @@
                     </div>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 30px; opacity: 0.8; font-size: 0.9rem;">Swipe left/right to view all plans • Special offers for first 50 members</p>
+            <p style="text-align: center; margin-top: 20px; opacity: 0.8; font-size: 14px;">Swipe left/right to view all plans • Special offers for first 50 members</p>
         </div>
     </section>
 
@@ -779,14 +763,15 @@
                 <p>Find us at our premium fitness center in Chennai</p>
             </div>
             <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9265817749997!2d80.23468927507205!3d13.044055387224503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267913a1330a3%3A0x79c2c4c80c0c7f6e!2sBody%20Shield%20Fitness%20Centre%20(Unisex)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                <!-- Google Map Embed (Exact Place) -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.665063366266!2d80.2465894!3d12.9664706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f923593451b1%3A0x17f12e444998801f!2sBODY%20SHIELD%20FITNESS%20CENTRE%20(UNISEX)!5e0!3m2!1sen!2sin!4v1704800000000"
+                  width="100%"
+                  height="100%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -823,7 +808,7 @@
                         </div>
                         <div>
                             <h3>Address</h3>
-                            <p>Veeramani Salai, Lakshman Nagar, Kandhanchavadi, Chennai 600096</p>
+                            <p style="font-size: 14px;">Veeramani Salai, Lakshman Nagar, Kandhanchavadi, Chennai 600096</p>
                         </div>
                     </div>
                     
@@ -833,7 +818,7 @@
                         </div>
                         <div>
                             <h3>Contact Number</h3>
-                            <p>099402 14735</p>
+                            <p style="font-size: 16px; font-weight: 600; color: var(--primary);">099402 14735</p>
                         </div>
                     </div>
                     
@@ -843,7 +828,12 @@
                         </div>
                         <div>
                             <h3>Opening Hours</h3>
-                            <p>Monday - Sunday: 4:30 PM - 10:00 PM</p>
+                            <p style="font-size: 14px;">
+                                5:30 AM - 10:00 AM (Morning)<br>
+                                10:00 AM - 1:00 PM (Ladies)<br>
+                                4:30 PM - 9:00 PM (Evening)<br>
+                                Sunday & Holidays: Closed
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -855,8 +845,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; margin-bottom: 15px;">BODY SHIELD FITNESS</h2>
-                <p style="opacity: 0.8; margin-bottom: 20px;">Chennai's premium fitness destination since 2025</p>
+                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; margin-bottom: 10px;">BODY SHIELD FITNESS</h2>
+                <p style="opacity: 0.8; margin-bottom: 15px; font-size: 14px;">Chennai's premium fitness destination since 2025</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/body_shield_/?igsh=ajl4czh5Z2E0dmd3#" class="social-link" target="_blank">
                         <i class="fab fa-instagram"></i>
@@ -870,7 +860,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Body Shield Fitness. All Rights Reserved. | Premium Gym Chennai</p>
+                <p>&copy; 2025 Body Shield Fitness. All Rights Reserved. | Premium Unisex Gym Chennai</p>
             </div>
         </div>
     </footer>
@@ -894,48 +884,28 @@
             document.getElementById('enquiryForm').reset();
         });
 
-        // Album scroll indicators
-        const albumScroll = document.getElementById('albumScroll');
-        const scrollDots = document.querySelectorAll('.scroll-dot');
+        // Highlight price cards on scroll
+        const priceContainer = document.querySelector('.price-scroll-container');
+        const priceCards = document.querySelectorAll('.price-card');
 
-        albumScroll.addEventListener('scroll', () => {
-            const scrollPosition = albumScroll.scrollLeft;
-            const itemWidth = albumScroll.children[0].offsetWidth + 20; // including gap
-            const activeIndex = Math.round(scrollPosition / itemWidth);
+        priceContainer.addEventListener('scroll', () => {
+            const scrollLeft = priceContainer.scrollLeft;
+            const containerWidth = priceContainer.clientWidth;
             
-            scrollDots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === activeIndex);
-            });
-        });
-
-        // Price card swipe highlighting
-        const priceScroll = document.getElementById('priceScroll');
-        
-        priceScroll.addEventListener('scroll', () => {
-            const scrollPosition = priceScroll.scrollLeft;
-            const itemWidth = priceScroll.children[0].offsetWidth + 25; // including gap
-            
-            // Calculate which card is most visible
-            const visibleIndex = Math.round(scrollPosition / itemWidth);
-            
-            // Add highlight class to current visible card
-            const priceCards = document.querySelectorAll('.price-card');
-            priceCards.forEach((card, index) => {
-                card.classList.remove('highlight');
-                if (index === visibleIndex) {
+            priceCards.forEach(card => {
+                const cardRect = card.getBoundingClientRect();
+                const containerRect = priceContainer.getBoundingClientRect();
+                
+                const cardCenter = cardRect.left + cardRect.width/2 - containerRect.left;
+                const containerCenter = containerWidth/2;
+                
+                if (Math.abs(cardCenter - containerCenter) < cardRect.width/2) {
                     card.classList.add('highlight');
+                } else {
+                    card.classList.remove('highlight');
                 }
             });
         });
-
-        // Auto-scroll album after 5 seconds
-        setInterval(() => {
-            if (albumScroll.scrollLeft + albumScroll.offsetWidth >= albumScroll.scrollWidth) {
-                albumScroll.scrollTo({ left: 0, behavior: 'smooth' });
-            } else {
-                albumScroll.scrollBy({ left: 320, behavior: 'smooth' });
-            }
-        }, 5000);
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -946,7 +916,7 @@
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 100,
+                        top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
                 }
