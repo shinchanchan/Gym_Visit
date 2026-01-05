@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Shield Fitness | Premium Gym Chennai 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E55A2B;
+            --dark: #0A0E17;
+            --light: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --highlight: rgba(255, 107, 53, 0.2);
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--light);
+            background-color: var(--dark);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Mobile-First Header */
+        .header {
+            padding: 20px 0;
+            background: rgba(10, 14, 23, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        
+        .logo-text p {
+            font-size: 11px;
+            opacity: 0.8;
+        }
+        
+        .phone-number {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .phone-number:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 60px;
+            background: linear-gradient(rgba(10, 14, 23, 0.9), rgba(10, 14, 23, 0.7)),
+                        url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1000');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-2025 {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 16px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Photo Album Section */
+        .album-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 1rem;
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .album-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .album-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        .album-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .album-item {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            scroll-snap-align: start;
+            background: var(--card-bg);
+            position: relative;
+        }
+        
+        .album-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .album-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .album-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 20px;
+        }
+        
+        .scroll-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .scroll-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-dot.active {
+            background: var(--primary);
+            transform: scale(1.3);
+        }
+        
+        /* Horizontal Price Cards */
+        .pricing-section {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .price-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .price-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 25px;
+            padding: 20px 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        .price-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .price-card {
+            flex: 0 0 auto;
+            width: 280px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            padding: 25px;
+            scroll-snap-align: start;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+        
+        .price-card.highlight {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .price-card.highlight:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+        
+        .price-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .price-header h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .price-amount {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin: 10px 0;
+        }
+        
+        .price-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .price-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .price-features li:before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .special-badge {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+            color: white;
+            padding: 8px 35px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            transform: rotate(45deg);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+        }
+        
+        .badge-limited {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+        }
+        
+        /* Map Section */
+        .map-section {
+            padding: 60px 0;
+        }
+        
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            height: 350px;
+            margin-top: 30px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .contact-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-form {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 40px 0 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive for Desktop */
+        @media (min-width: 768px) {
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            .album-item {
+                width: 400px;
+                height: 400px;
+            }
+            
+            .price-card {
+                width: 320px;
+                padding: 30px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero {
+                padding: 200px 0 80px;
+            }
+            
+            .album-item {
+                width: 450px;
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>BODY SHIELD FITNESS</h1>
+                        <p>PREMIUM GYM • CHENNAI</p>
+                    </div>
+                </div>
+                <a href="tel:09940214735" class="phone-number">
+                    <i class="fas fa-phone"></i> 099402 14735
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="highlight-2025">2025 EDITION</div>
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Experience Chennai's most advanced fitness center with state-of-the-art equipment, expert trainers, and personalized training programs.</p>
+            <a href="#pricing" class="cta-button">VIEW MEMBERSHIP PLANS</a>
+        </div>
+    </section>
+
+    <!-- Photo Album Section -->
+    <section class="album-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our World-Class Facility</h2>
+                <p>Scroll to explore our premium gym environment</p>
+            </div>
+            <div class="album-container">
+                <div class="album-scroll" id="albumScroll">
+                    <div class="album-item">
+                        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1000" alt="Gym Interior">
+                        <div class="album-overlay">
+                            <h3>Main Training Area</h3>
+                            <p>Spacious workout environment</p>
+                        </div>
+                    </div>
+                    <div class="album-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA-xzOrePokYz293b_7-sMO9ovM67p3u10g&s" alt="Weight Section">
+                        <div class="album-overlay">
+                            <h3>Weight Training Zone</h3>
+                            <p>Premium equipment collection</p>
+                        </div>
+                    </div>
+                    <div class="album-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/026/781/389/small/gym-interior-background-of-dumbbells-on-rack-in-fitness-and-workout-room-photo.jpg" alt="Dumbbell Rack">
+                        <div class="album-overlay">
+                            <h3>Dumbbell Station</h3>
+                            <p>Complete weight selection</p>
+                        </div>
+                    </div>
+                    <div class="album-item">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cardio Area">
+                        <div class="album-overlay">
+                            <h3>Cardio Section</h3>
+                            <p>Modern cardio machines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator" id="scrollDots">
+                    <div class="scroll-dot active"></div>
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>2025 Membership Plans</h2>
+                <p>Swipe to view all our premium packages</p>
+            </div>
+            <div class="price-container">
+                <div class="price-scroll" id="priceScroll">
+                    <!-- Regular Monthly -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Monthly</h3>
+                            <div class="price-amount">₹1500</div>
+                            <p>Perfect for beginners</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Full gym access</li>
+                            <li>Basic training guidance</li>
+                            <li>Locker facility</li>
+                            <li>Open 7 days a week</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 3 Months -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>3 Months</h3>
+                            <div class="price-amount">₹3200</div>
+                            <p>Save ₹300</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Full gym access</li>
+                            <li>Personalized workout plan</li>
+                            <li>Locker facility</li>
+                            <li>Progress tracking</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 6 Months -->
+                    <div class="price-card highlight">
+                        <div class="price-header">
+                            <h3>6 Months</h3>
+                            <div class="price-amount">₹6000</div>
+                            <p>Save ₹3000</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Full gym access</li>
+                            <li>Personalized workout plan</li>
+                            <li>Diet consultation</li>
+                            <li>Progress tracking & support</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 12 Months -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>12 Months</h3>
+                            <div class="price-amount">₹8000</div>
+                            <p>Save ₹10000</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Full gym access</li>
+                            <li>Personalized workout plan</li>
+                            <li>Diet consultation & follow-up</li>
+                            <li>Priority trainer support</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Special Offers -->
+                    <div class="price-card">
+                        <div class="special-badge">SPECIAL</div>
+                        <div class="price-header">
+                            <h3>Monthly</h3>
+                            <div class="price-amount">₹1500</div>
+                            <p>+ FREE GUIDANCE</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Full gym access</li>
+                            <li>Free professional guidance</li>
+                            <li>Locker facility</li>
+                            <li>Open 7 days a week</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="price-card highlight">
+                        <div class="special-badge badge-limited">LIMITED</div>
+                        <div class="price-header">
+                            <h3>3 Months (2+1)</h3>
+                            <div class="price-amount">₹3500</div>
+                            <p>+ CREATINE or 1 Month Free</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>3 months for price of 2</li>
+                            <li>Free Creatine supplement</li>
+                            <li>OR 1 month free extension</li>
+                            <li>Personalized workout plan</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>6 Months (4+2)</h3>
+                            <div class="price-amount">₹6500</div>
+                            <p>+ CREATINE or 2 Months Free</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>6 months for price of 4</li>
+                            <li>Free Creatine supplement</li>
+                            <li>OR 2 months free extension</li>
+                            <li>Diet consultation included</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="price-card highlight">
+                        <div class="special-badge">BEST VALUE</div>
+                        <div class="price-header">
+                            <h3>12 Months (6+6)</h3>
+                            <div class="price-amount">₹9000</div>
+                            <p>+ CREATINE or 3 Months Free</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>12 months for price of 6</li>
+                            <li>Free Creatine supplement</li>
+                            <li>OR 3 months free extension</li>
+                            <li>Complete fitness package</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; opacity: 0.8; font-size: 0.9rem;">Swipe left/right to view all plans • Special offers for first 50 members</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit Our Location</h2>
+                <p>Find us at our premium fitness center in Chennai</p>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9265817749997!2d80.23468927507205!3d13.044055387224503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267913a1330a3%3A0x79c2c4c80c0c7f6e!2sBody%20Shield%20Fitness%20Centre%20(Unisex)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Started Today</h2>
+                <p>Contact us for your free trial session</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-form">
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <label for="userName">Full Name</label>
+                            <input type="text" id="userName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhone">Phone Number</label>
+                            <input type="tel" id="userPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> SEND ENQUIRY
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Veeramani Salai, Lakshman Nagar, Kandhanchavadi, Chennai 600096</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Contact Number</h3>
+                            <p>099402 14735</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Sunday: 4:30 PM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; margin-bottom: 15px;">BODY SHIELD FITNESS</h2>
+                <p style="opacity: 0.8; margin-bottom: 20px;">Chennai's premium fitness destination since 2025</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/body_shield_/?igsh=ajl4czh5Z2E0dmd3#" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919940214735" class="social-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:09940214735" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Body Shield Fitness. All Rights Reserved. | Premium Gym Chennai</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const userName = document.getElementById('userName').value;
+            const userPhone = document.getElementById('userPhone').value;
+            
+            if (!userName || !userPhone) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            const message = `Hello Body Shield Fitness!%0A%0A*Enquiry Details:*%0A*Name:* ${userName}%0A*Phone:* ${userPhone}%0A%0AI'm interested in your 2025 membership plans. Please share more details.`;
+            
+            window.open(`https://wa.me/919940214735?text=${message}`, '_blank');
+            document.getElementById('enquiryForm').reset();
+        });
+
+        // Album scroll indicators
+        const albumScroll = document.getElementById('albumScroll');
+        const scrollDots = document.querySelectorAll('.scroll-dot');
+
+        albumScroll.addEventListener('scroll', () => {
+            const scrollPosition = albumScroll.scrollLeft;
+            const itemWidth = albumScroll.children[0].offsetWidth + 20; // including gap
+            const activeIndex = Math.round(scrollPosition / itemWidth);
+            
+            scrollDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        });
+
+        // Price card swipe highlighting
+        const priceScroll = document.getElementById('priceScroll');
+        
+        priceScroll.addEventListener('scroll', () => {
+            const scrollPosition = priceScroll.scrollLeft;
+            const itemWidth = priceScroll.children[0].offsetWidth + 25; // including gap
+            
+            // Calculate which card is most visible
+            const visibleIndex = Math.round(scrollPosition / itemWidth);
+            
+            // Add highlight class to current visible card
+            const priceCards = document.querySelectorAll('.price-card');
+            priceCards.forEach((card, index) => {
+                card.classList.remove('highlight');
+                if (index === visibleIndex) {
+                    card.classList.add('highlight');
+                }
+            });
+        });
+
+        // Auto-scroll album after 5 seconds
+        setInterval(() => {
+            if (albumScroll.scrollLeft + albumScroll.offsetWidth >= albumScroll.scrollWidth) {
+                albumScroll.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                albumScroll.scrollBy({ left: 320, behavior: 'smooth' });
+            }
+        }, 5000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
